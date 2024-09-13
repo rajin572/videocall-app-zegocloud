@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Video-Calling-Website
 
-## Getting Started
+## Setup: (For UI Kit)
 
-First, run the development server:
+- Create an NextJS application using `npx create-next-app@latest`.
+- Now Create an page where user can set his username and if user has meeting id then he can join the meeting by clicking on join button. If user does not have meeting id then he can create one by clicking on the create an meeting button.
+- when he click on create meeting button or join button then he will be redirected to a dynamic page where he can join the meeting. like: `/room/:meetingId`.
+- Now go to zego cloud website and click on the start building button to create an accoun or if you already have an account then click on login button.
+- After login/create account successfully go to dashboard and create an project from dashboard by clicking on create your project.
+- Now select which use case you want to set up on your project and click on next button.
+- Now set a project name and click on start with UI Kit button. It takes some time to create your project.
+- Now select the plartform you want to use. like (web, android, ios).
+- Then Setup basic configaration and click on save & start to intregate button.
+- Now go dashboard and click on the project you have created. Here you will get AppID and ServerSecret. Add those on your application on .env file.
+- Then open view guide on new tab and select using npm package for guide.
+- Now Install zegocloud. and import it on dynamic page where user can join the meeting.
+- Now get the meetingID from the url on your dynamic page. Then follow the documantation on zego cloud website or you can follow my code.
+- If You follow those steps perfectly you can show the Join meeting UI in the dynamic page.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Installation:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Create a .env file and add the `NEXT_PUBLIC_ZEGO_APP_ID` and `NEXT_PUBLIC_ZEGO_SERVER_SECRET`.
+4. Run the website using `npm run dev`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Description:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Welcome to Peace - where every act of kindness makes a difference. At Peace, we believe in the power of giving and the impact it can have on the lives of those in need. Explore our donation posts below and join us in spreading hope, compassion, and support to communities around the world. Together, let's make the world a brighter and more peaceful place for everyone. At Peace, we believe that every act of kindness, no matter how small, has the power to create positive change. Join us on our mission to build a more peaceful and equitable world through the simple act of giving. Together, we can make a difference.
 
-## Learn More
+## Tecnology I have Used:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1.JavaScript 2. NextJS 3. Zustand 4. Tailwind CSS 5. Zego Cloud

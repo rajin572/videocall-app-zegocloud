@@ -24,10 +24,6 @@
 3. Create a .env file and add the `NEXT_PUBLIC_ZEGO_APP_ID` and `NEXT_PUBLIC_ZEGO_SERVER_SECRET`.
 4. Run the website using `npm run dev`.
 
-## Description:
-
-Welcome to Peace - where every act of kindness makes a difference. At Peace, we believe in the power of giving and the impact it can have on the lives of those in need. Explore our donation posts below and join us in spreading hope, compassion, and support to communities around the world. Together, let's make the world a brighter and more peaceful place for everyone. At Peace, we believe that every act of kindness, no matter how small, has the power to create positive change. Join us on our mission to build a more peaceful and equitable world through the simple act of giving. Together, we can make a difference.
-
 ## Tecnology I have Used:
 
 1.JavaScript 2. NextJS 3. Zustand 4. Tailwind CSS 5. Zego Cloud

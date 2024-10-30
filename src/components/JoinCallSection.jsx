@@ -34,10 +34,7 @@ export default function JoinCallSection() {
           <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text font-extrabold text-transparent text-5xl">
             <span className="block">Notun Meyeder Sathe</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-xl sm:text-xl/relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus ex velit, officiis qui architecto.
-          </p>
+          <p className="mx-auto mt-6 max-w-xl sm:text-xl/relaxed"></p>
           <div className="mt-10">
             <input
               type="text"

@@ -4,9 +4,12 @@ import useUser from "@/hooks/useUser";
 import { ZegoUIKitPrebuilt } from "@zegocloud/zego-uikit-prebuilt";
 import React from "react";
 import { v4 as uuid } from "uuid";
+import { useRouter } from "next/navigation"; // Use this to handle navigation
 
 const VideoCall = ({ roomID }) => {
   const { fullName } = useUser();
+  const router = useRouter(); // Initialize the router
+
   console.log({ fullName, roomID });
 
   let myMeeting = async (element) => {
@@ -24,7 +27,8 @@ const VideoCall = ({ roomID }) => {
 
     // Create instance object from Kit Token.
     const zp = ZegoUIKitPrebuilt.create(kitToken);
-    // start the call
+
+    // Start the call and handle room leave event
     zp.joinRoom({
       container: element,
       sharedLinks: [
@@ -43,6 +47,10 @@ const VideoCall = ({ roomID }) => {
         mode: ZegoUIKitPrebuilt.VideoConference,
       },
       maxUsers: 10,
+      onLeaveRoom: () => {
+        // Redirect to home page when the call ends
+        router.push("/");
+      },
     });
   };
 
